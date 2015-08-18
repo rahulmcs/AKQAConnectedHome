@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bath_meter_digit_separator_padding">1dp</dimen>
+    <dimen name="bath_meter_padding_top">120dp</dimen>
+    <dimen name="bath_meter_dial_padding">22dp</dimen>
+</resources>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/temperature_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dial_bg" />
+
+    <ImageView
+        android:id="@+id/dial_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bath_meter_dial_padding"
+        android:src="@drawable/dial_hand" />
+
+    <LinearLayout
+        android:id="@+id/bath_capacity_meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bath_meter_padding_top">
+
+        <TextView
+            android:id="@+id/bath_capacity_meter_digit0"
+            style="@style/bath_meter_digit_style" />
+
+        <TextView
+            android:id="@+id/bath_capacity_meter_digit1"
+            android:layout_marginLeft="@dimen/bath_meter_digit_separator_padding"
+            style="@style/bath_meter_digit_style" />
+
+        <TextView
+            android:id="@+id/bath_capacity_meter_digit2"
+            android:layout_marginLeft="@dimen/bath_meter_digit_separator_padding"
+            style="@style/bath_meter_digit_style" />
+    </LinearLayout>
+</RelativeLayout>

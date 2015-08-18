@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:id="@+id/bath_monitor_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/bath_monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/monitor_markings"
+            android:background="@drawable/monitor_bg" />
+
+        <ImageView
+            android:id="@+id/bath_monitor_water"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/monitor_water"
+            android:alpha="0.5" />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/hot_tap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bath_monitor_container"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/hot_tap" />
+
+    <TextView
+        android:id="@+id/hot_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hot_tap_button"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="right"
+        android:text="@string/label_button_hot" />
+
+    <Button
+        android:id="@+id/cold_tap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bath_monitor_container"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/cold_tap" />
+
+    <TextView
+        android:id="@+id/cold_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cold_tap_button"
+        android:text="@string/label_button_cold"
+        android:gravity="left"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

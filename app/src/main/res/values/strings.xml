@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AKQA Connected Home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="label_button_hot">HOT</string>
+    <string name="label_button_cold">COLD</string>
+
+    <string name="bath_temperature_retrieval_success">Retrieved water temperature from server - Hot Water: %1$s Cold Water: %2$s.</string>
+    <string name="error_bath_temperature_failure">Error retrieving bath water temperature</string>
+
+</resources>
