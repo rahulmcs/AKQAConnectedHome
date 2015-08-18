@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.annotations.Expose;
 
 /**
- * Created by rahulchaudhari on 15/08/15.
+ * Bath Water Temperature POJO
  */
 public class BathWaterTemperature {
 

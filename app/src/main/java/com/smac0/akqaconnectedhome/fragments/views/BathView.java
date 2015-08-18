@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import com.smac0.akqaconnectedhome.model.BathWaterTemperature;
 
 /**
- * Created by rahulchaudhari on 15/08/15.
+ * Interface representing a view that will show the representation of a Water Bath
  */
 public interface BathView extends LoadingView{
     void showWaterTemperatureFetchError(String reason);

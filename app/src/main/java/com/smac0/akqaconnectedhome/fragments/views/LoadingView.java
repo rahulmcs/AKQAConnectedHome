@@ -2,7 +2,7 @@
 package com.smac0.akqaconnectedhome.fragments.views;
 
 /**
- * Created by rahulchaudhari on 15/08/15.
+ * Interface representing a view used to show load data progress
  */
 public interface LoadingView {
     void showProgress();
